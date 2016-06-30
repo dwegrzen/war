@@ -17,7 +17,7 @@ class Deck
   end
 
   def newdeck
-    @cards = FACES.map{|face| SUITS.map{|suit| Card.new(face,suit)}}.flatten.shuffle
+    self.cards = FACES.map{|face| SUITS.map{|suit| Card.new(face,suit)}}.flatten.shuffle
   end
 
   def shuffledeck
